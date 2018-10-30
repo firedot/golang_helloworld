@@ -25,20 +25,7 @@ grep 'GOPATH|GOROOT' /home/vagrant/.bash_profile &>/dev/null || {
   sudo chown -R vagrant:  /home/vagrant
 }
 
-# Install wget if not installed
-which wget || {
-    sudo apt-get update
-    sudo apt-get install -y wget
-}
-
-# Install unzip if not installed
-which unzip || {
-    sudo apt-get update
-    sudo apt-get install -y unzip
-}
-
-# Install git if not installed
-which git || {
-    apt-get update
-    apt-get install -y git
+# Install packages if not installed
+which wget unzip git || {
+    sudo apt-get install -y wget unzip git
 }
