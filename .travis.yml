@@ -1,4 +1,4 @@
 ---
 language: go
 script:
-- bash -x test/test.sh
+- test/test.sh

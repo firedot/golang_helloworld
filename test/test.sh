@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-if go run ../main.go == "hello"; then
+VAR1="`go run ../main.go`"
+
+if [ "$VAR1" = "hello" ]; then
     echo "Good!"
     exit 0
 else:
