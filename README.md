@@ -28,6 +28,12 @@ cd golang_helloworld
 ```
 vagrant up
 ```
+
+4. Login to the machine by running: 
+
+```
+vagrant ssh
+```
 4. Build your golan program:
 
 ```
