@@ -1,4 +1,7 @@
 language: go
+sudo_required: true
+before_script:
+- go build main.go -o main_out
 script:
 - test/test.sh
 deploy:

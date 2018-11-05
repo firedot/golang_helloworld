@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-go build main.go -o main_out
 chmod +x main_out
 VAR1=`bash -x main_out`
 
