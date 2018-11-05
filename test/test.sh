@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-chmod +x main_out
-VAR1=`bash -x main_out`
+chmod +x main_out.go
+VAR1=`bash -x main_out.go`
 
 if [ "$VAR1" = "hello" ]; then
     echo "Good!"
