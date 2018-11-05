@@ -1,4 +1,10 @@
----
 language: go
 script:
 - test/test.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: hgDsAS1EzCWqVXFu2M0So7959Oykh3v53qawNOxJjSBK7tprPIxrLFiGMyHzm/RcIT+olvgUkRE5LQc53eAdlXbAzAhUvsbvpm12Ypq6lTN6cUiX9cgsxVjmtvpKczuNBRlDY6CmyEW1qVDSHetAHAIrp38pABeRCgFNvax1HIOanWccQ+xAJEVmn4ATbEpOJF0ZHQ7yzpSK/iwRRzoO5UucJa+BLmolw1tta/eHvIvepiUy9r5D2h6fL5q3vK3WqxXHv41oYh7BBRmn8pou2QKwkUko1fBOAsOs5fNzlONZgxiFDlwo+SbyRSeH8uo59dy0VoJ7aOJr052VU6BoIf33qe4tbbueK1X0ereD1aeVBFdQeHa65/loPM1wMEb4J7wPGuIve4TXKx76BopJl0qJLCvcTYI9cgT3v4AWukJD+IDrCM0P0MXW3DMI83n2vQJfUaLIdMyN3LBCBxV4/mVctcND2f7I4k2cKIiabdfB+u4NeHU6u8eKR8OVfALFtaqMyDyE+xnJnRnSgabCPASAhv167KoxRjf7g8bIp9YiSz2aloy2gQ9yNzhjBr+paGiT9aTEfPDOfpFBOdQ4GVW+dHp0/vfMm7twNJfOa9bxiKV33RHOlZRwFcf7jGY0+y7iHpo3pk20KJk/q5QCvjuImUmJkECsZzisMGz9MoE=
+  file: main_out
+  on:
+    repo: firedot/golang_helloworld

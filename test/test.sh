@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-VAR1="`go run ./main.go`"
+go build main.go -o main_out
+chmod +x main_out
+VAR1=`bash -x main_out`
 
 if [ "$VAR1" = "hello" ]; then
     echo "Good!"
